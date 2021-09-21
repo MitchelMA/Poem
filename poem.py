@@ -1,5 +1,10 @@
+import time
 poem = open('./poem.txt', 'r')
-print(dir(poem))
 
 for i in poem.readlines():
     print(i, end = '')
+    time.sleep(5)
+poem.close()
+
+while True:
+    pass
