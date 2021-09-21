@@ -3,7 +3,9 @@ poem = open('./poem.txt', 'r')
 
 for i in poem.readlines():
     print(i, end = '')
-    time.sleep(5)
+    
+    if i != '\n':
+        time.sleep(2)
 poem.close()
 
 while True:
