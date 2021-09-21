@@ -1,12 +1,10 @@
 import time
 poem = open('./poem.txt', 'r')
 
-for i in poem.readlines():
-    print(i, end = '')
+for i in poem:
+    print(i, end='', flush=True)
 
     if i != '\n':
-        time.sleep(4.4)
-poem.close()
-
-while True:
-    pass
+        time.sleep(0.1)
+else:
+    time.sleep(6)
